@@ -8,8 +8,8 @@ $(document).ready(function () {
     // Function to load content and animate
     function loadAndAnimateContent(url) {
         $.ajax({
+            url: linkId + ".html", // Construct the URL based on the link ID
             type: 'GET',
-            url: url,
             dataType: "html",
             success: function (data) {
                 // Hide content with animation
