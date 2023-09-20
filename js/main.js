@@ -1,3 +1,8 @@
+// Name: Megha Panchani
+// Student no: w0836064
+// Assignment 2 
+
+
 $(document).ready(function () {
     // Event handler for when a link is clicked
     $("a").click(function (event) {
