@@ -1,32 +1,39 @@
-// WEB303 Assignment 2
+$(document).ready(function() {
+    // Attach a click event listener to elements with the IDs 'prospect', 'convert', and 'retain'
+    $("#prospect, #convert, #retain").on("click", function(event) {
+        // Prevent the default behavior of the clicked link (e.g., navigating to a new page)
+        event.preventDefault();
 
+        // Get the ID of the clicked link ('prospect', 'convert', or 'retain')
+        var linkId = $(this).attr("id");
 
-$(document).ready(function () {
-    // Initially hide the content div
-    $("#content").hide();
-
-    // Function to load content and animate
-    function loadAndAnimateContent(url) {
+        // Make an AJAX request to load content from a file with a name matching the link ID
         $.ajax({
-            url: url,
-            dataType: "html",
-            success: function (data) {
-                // Hide content with animation
-                $("#content").fadeOut(300, function () {
-                    // Clear the content
-                    $(this).empty();
+            url: linkId + ".html", // Construct the URL based on the link ID
+            type: 'GET', // Specify the HTTP request method as 'GET'
+            dataType: "html", // Specify that we expect HTML content in the response
+            success: function(data) {
+                // Get a reference to the 'content' div
+                var $contentVal = $('#content');
 
-                    // Append the new content and fadeIn
-                    $(this).append(data).fadeIn(300);
+                // Hide the content div with a 400ms animation
+                $contentVal.hide();
+
+                // Set the HTML content of the 'content' div to the data received from the AJAX request
+                $contentVal.html(data);
+
+                // Fade in the 'content' div with a 1500ms animation
+                $contentVal.fadeIn(1500);
+
+                // Apply a border to the 'content' div
+                $contentVal.css({
+                    'border': '1.5px solid blue'
                 });
+            },
+            error: function() {
+                // Display an alert message if there is an error loading content
+                alert("Error loading content.");
             }
         });
-    }
-
-    // Click event for links
-    $("#content-wrapper a").on("click", function (e) {
-        e.preventDefault(); // Prevent default link behavior
-        var url = $(this).attr("href");
-        loadAndAnimateContent(url);
     });
 });
