@@ -59,25 +59,45 @@ $(document).ready(function () {
 
     $contentItemList.append(
         `<button id="update-success">Update Successful</button>`
-    );
-    $contentItemList.append(
+      );
+      $contentItemList.append(
         `<button id="update-failure">Update Unsuccessful</button>`
-    );
-
-    $("#update-success").click(function () {
-        const itemToUpdate = contentItems[0];
-        itemToUpdate.updateContentItem(itemToUpdate.id, "London ", "Exploring New Places", "Adventure");
-        console.log("Updated Successfully: " + itemToUpdate.toString());
-    });
-
-    $("#update-failure").click(function () {
-        const itemToUpdate = contentItems[1];
-        const originalItem = itemToUpdate.toString(); // Store the original item
+      );
     
-        itemToUpdate.updateContentItem(itemToUpdate.id, "Different Game", null, "Different Category");
+      $("#update-success").click(function () {
+        const itemToUpdate = contentItems[0];
+        itemToUpdate.updateContentItem(
+          itemToUpdate.id,
+          "London",
+          "Exploring New Places",
+          "Adventure"
+        );
+    
         
-        console.log("Update Failed: No changes made to the item.");
-    });
+        const $contentItem = $("#content-item-" + itemToUpdate.id);
+        $contentItem.find("h2").text(itemToUpdate.name);
+        $contentItem.find("p").text(itemToUpdate.description);
+        $contentItem.find("div").text(itemToUpdate.category);
+    
+        console.log("Updated Successfully: " + itemToUpdate.toString());
+      });
+    
+      $("#update-failure").click(function () {
+        const itemToUpdate = contentItems[0];
+        itemToUpdate.updateContentItem(
+          itemToUpdate.id,
+          " Sorry no city",
+          "Sorry we cannot find the place",
+          "No"
+        );
+    
+        const $contentItem = $("#content-item-" + itemToUpdate.id);
+        $contentItem.find("h2").text(itemToUpdate.name);
+        $contentItem.find("p").text(itemToUpdate.description);
+        $contentItem.find("div").text(itemToUpdate.category);
+    
+        console.log("Updated Unsuccessfully: " + itemToUpdate.toString());
+      });
     
 });
 
