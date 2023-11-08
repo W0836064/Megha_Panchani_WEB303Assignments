@@ -1,0 +1,59 @@
+[
+    {
+        "firstName": "Raj",
+        "lastName": "Malhotra",
+        "age": 25,
+        "occupation": "Student",
+        "city": "Mumbai",
+        "dateOfBirth": "1997-03-12"
+    },
+    {
+        "firstName": "Simran",
+        "lastName": "Singh",
+        "age": 24,
+        "occupation": "Student",
+        "city": "Amritsar",
+        "dateOfBirth": "1998-05-18"
+    },
+    {
+        "firstName": "Baldev",
+        "lastName": "Singh",
+        "age": 60,
+        "occupation": "Father",
+        "city": "Amritsar",
+        "dateOfBirth": "1962-11-30"
+    },
+    {
+        "firstName": "Vijay",
+        "lastName": "Chauhan",
+        "age": 32,
+        "occupation": "Journalist",
+        "city": "Delhi",
+        "dateOfBirth": "1989-08-22"
+    },
+    {
+        "firstName": "Meera",
+        "lastName": "Kapoor",
+        "age": 28,
+        "occupation": "Doctor",
+        "city": "Mumbai",
+        "dateOfBirth": "1993-04-14"
+    },
+    {
+        "firstName": "Rahul",
+        "lastName": "Sharma",
+        "age": 28,
+        "occupation": "Software Engineer",
+        "city": "Bengaluru",
+        "dateOfBirth": "1994-07-03"
+    },
+    {
+        "firstName": "Pooja",
+        "lastName": "Sharma",
+        "age": 26,
+        "occupation": "Teacher",
+        "city": "Pune",
+        "dateOfBirth": "1996-01-19"
+    }
+]
+
