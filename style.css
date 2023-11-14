@@ -1,135 +1,138 @@
-body,html {
-    background-color: beige;
-    font-family: Arial, sans-serif;
+body,
+html {
+  background-color: beige;
+  font-family: Arial, sans-serif;
 }
 
 .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #AEDEFC;
-    box-shadow: 0 0 10px purple;
-    border-radius: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #aedefc;
+  box-shadow: 0 0 10px purple;
+  border-radius: 10px;
 }
 
 h1 {
-    text-align: center;
-    font-size: 32px;
-    margin-bottom: 20px;
-    color: purple;
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: purple;
 }
 
 /* Accordion Styles */
 .accordion-label {
-    background-color: #FFDFDF;
-    color: purple;
-    padding: 15px;
-    cursor: pointer;
-    border-bottom: 1px solid #ddd;
-    transition: background-color 0.2s;
-    margin-bottom: 30px;
+  background-color: #ffdfdf;
+  color: purple;
+  padding: 15px;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.2s;
+  margin-bottom: 30px;
 }
 
 .accordion-label:hover {
-    background-color: #FFDFDF;
+  background-color: #ffdfdf;
 }
 
 .accordion-panel {
-    display: none;
-    padding: 15px;
-    font-size: 18px;
-    margin-bottom: 15px;
+  display: none;
+  padding: 15px;
+  font-size: 18px;
+  margin-bottom: 15px;
 }
 
 .accordion-panel img {
-    max-width: 100%;
- 
-    display: block;
-    margin: 0 auto;
+  max-width: 100%;
 
+  display: block;
+  margin: 0 auto;
 }
 
 /* Tab Styles */
 .tab-labels {
-    display: flex;
-    list-style: none;
-    padding: 0;
+  display: flex;
+  list-style: none;
+  padding: 0;
 }
 
 .tab-label {
-    flex: 1;
-    text-align: center;
-    background-color: #FFDFDF; /* Background color for inactive tabs */
-    color: purple;
-    padding: 15px;
-    cursor: pointer;
-    transition: background-color 0.2s;
-    margin-bottom: 10px;
+  flex: 1;
+  text-align: center;
+  background-color: #ffdfdf; /* Background color for inactive tabs */
+  color: purple;
+  padding: 15px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-bottom: 10px;
 }
 
 .tab-label.active {
-    background-color: purple; /* Background color for the active tab */
-    color: #FFDFDF;
+  background-color: purple; /* Background color for the active tab */
+  color: #ffdfdf;
 }
 
 .tab-label:hover {
-    background-color: #FFDFDF; /* Hover color for inactive tabs */
+  background-color: #ffdfdf; /* Hover color for inactive tabs */
 }
 
 .tab-pane {
-    display: none;
-    padding: 15px;
-    font-size: 18px;
-    margin-bottom: 15px;
+  display: none;
+  padding: 15px;
+  font-size: 18px;
+  margin-bottom: 15px;
 }
 
 .tab-pane.active {
-    display: block;
+  display: block;
 }
 
 .tab-pane img {
-    max-width: 100%;
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 30px;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 
-.character-table {
-    width: 100%;
-    border-collapse: collapse;
+/* Style the table */
+#characterTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
 }
 
-.character-table th, .character-table td {
-    padding: 10px;
-    text-align: left;
-    border: 1px solid #ddd;
+#characterTable th,
+#characterTable td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
 }
 
-.character-table th {
-    background-color: #f2f2f2;
-    font-weight: bold;
+#characterTable th {
+  background-color: #f2f2f2;
+  cursor: pointer;
 }
 
-.character-table a {
-    text-decoration: none;
-    color: #333;
-    display: flex;
-    align-items: center;
+#characterTable th:hover {
+  background-color: #ddd;
 }
 
-.character-table a .chevron {
-    margin-left: 4px;
-    font-size: 14px;
+/* Style for sorting icons */
+.sort-icon {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  margin-left: 5px;
 }
 
-.character-table a:hover {
-    color: #007bff;
+/* Style alternating rows in the table */
+#characterTable tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
 }
 
-.character-table tbody tr:nth-child(odd) {
-    background-color: #f2f2f2;
-}
-
-.character-table tbody tr:nth-child(even) {
-    background-color: #fff;
+/* Hover effect on table rows */
+#characterTable tbody tr:hover {
+  background-color: #f0f0f0;
 }
