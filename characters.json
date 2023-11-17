@@ -1,0 +1,58 @@
+[
+    {
+        "firstName": "Rachel",
+        "lastName": "Green",
+        "info1": "Occupation: Fashion Buyer",
+        "info2": "Relationship: Ross Geller",
+        "info3": "Quirk: Spoiled upbringing",
+        "info4": "Trait: High-maintenance"
+    },
+    {
+        "firstName": "Ross",
+        "lastName": "Geller",
+        "info1": "Occupation: Paleontologist",
+        "info2": "Relationship: Rachel Green",
+        "info3": "Quirk: Divorced three times",
+        "info4": "Trait: Nerdy"
+    },
+    {
+        "firstName": "Monica",
+        "lastName": "Geller",
+        "info1": "Occupation: Chef",
+        "info2": "Relationship: Chandler Bing",
+        "info3": "Quirk: Obsessive about cleanliness",
+        "info4": "Trait: Competitive"
+    },
+    {
+        "firstName": "Chandler",
+        "lastName": "Bing",
+        "info1": "Occupation: IT Procurement Manager",
+        "info2": "Relationship: Monica Geller",
+        "info3": "Quirk: Sarcastic humor",
+        "info4": "Trait: Commitment issues"
+    },
+    {
+        "firstName": "Joey",
+        "lastName": "Tribbiani",
+        "info1": "Occupation: Actor",
+        "info2": "Relationship: Many short-term flings",
+        "info3": "Quirk: Loves food",
+        "info4": "Trait: Naive but kind-hearted"
+    },
+    {
+        "firstName": "Phoebe",
+        "lastName": "Buffay",
+        "info1": "Occupation: Masseuse",
+        "info2": "Relationship: Mike Hannigan",
+        "info3": "Quirk: Eccentric and free-spirited",
+        "info4": "Trait: Believer in the supernatural"
+    },
+    {
+        "firstName": "Gunther",
+        "lastName": "Central Perk",
+        "info1": "Occupation: Barista",
+        "info2": "Relationship: Long-time crush on Rachel",
+        "info3": "Quirk: Silent admiration for Rachel",
+        "info4": "Trait: Loves Rachel secretly"
+    }
+]
