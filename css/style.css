@@ -1,53 +1,55 @@
 /* Body styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-}
-
-/* Header styles */
-h1 {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    margin: 30px;
+  }
+  
+  /* Header styles */
+  h1 {
     text-align: center;
-    font-size: 24px;
+    font-size: 26px;
     margin-bottom: 20px;
-}
-
-/* Search input styles */
-#searchInput {
+    color: green;
+  }
+  
+  /* Search input styles */
+  #searchInput {
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
     box-sizing: border-box;
-}
-
-/* Filter button styles */
-.filterBtn {
+  }
+  
+  /* Filter button styles */
+  .filterBtn {
     padding: 8px 16px;
     margin-right: 10px;
     cursor: pointer;
     border: none;
-    background-color: #3498db;
+    background-color: green;
     color: white;
     border-radius: 5px;
-}
-
-/* Table styles */
-#characterTable {
+  }
+  
+  /* Table styles */
+  #characterTable {
     width: 100%;
     border-collapse: collapse;
-}
-
-#characterTable th,
-#characterTable td {
+  }
+  
+  #characterTable th,
+  #characterTable td {
     border: 1px solid #ddd;
-    padding: 8px;
-}
-
-#characterTable th {
-    background-color: #f2f2f2;
-}
-
-/* Highlighting matched characters */
-.highlight {
+    padding: 9px;
+  }
+  
+  #characterTable th {
+    background-color: aqua;
+  }
+  
+  /* Highlighting matched characters */
+  .highlight {
     background-color: darkgreen;
     color: white;
-}
+  }
+  

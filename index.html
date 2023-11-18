@@ -1,38 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Friends Characters</title>
-    <link href="css/style.css" rel="stylesheet">
-</head>
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
 
-<body>
+  <body>
     <h1>Megha Panchani - Friends</h1>
 
-    <input type="text" id="searchInput" placeholder="Search by first name">
-
-    <div>
-        <button class="filterBtn" data-filter="A-M">A - M (<span id="rangeAM">0</span>)</button>
-        <button class="filterBtn" data-filter="N-Z">N - Z (<span id="rangeNZ">0</span>)</button>
-    </div>
+    <input type="text" id="searchInput" placeholder="Search by first name" />
 
     <table id="characterTable">
-        <thead>
-            <tr>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Info 1</th>
-                <th>Info 2</th>
-                <th>Info 3</th>
-                <th>Info 4</th>
-            </tr>
-        </thead>
-        <tbody></tbody>
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Occupation</th>
+          <th>Relationship</th>
+          <th>Quirk</th>
+          <th>Trait</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
     </table>
-
+    <div>
+      <button class="filterBtn" data-filter="A-M">
+        (<span id="rangeAM">0</span>)
+      </button>
+      <button class="filterBtn" data-filter="N-Z">
+        (<span id="rangeNZ">0</span>)
+      </button>
+    </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/script.js"></script>
-</body>
-
+  </body>
 </html>
